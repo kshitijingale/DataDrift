@@ -16,7 +16,7 @@ const InputField = ({
 
     return (
         <div className={`relative my-2 ${className}`}>
-            <label htmlFor={name} className="block text-sm font-medium text-gray-600">
+            <label htmlFor={name} className="block text-sm font-medium text-gray-600 mb-2 sm:mb-0">
                 {label}
             </label>
             {
