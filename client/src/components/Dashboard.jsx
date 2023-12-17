@@ -32,7 +32,7 @@ const Dashboard = () => {
             // Destructure the filters to be used as query parameters
             const { age, gender, dateRange } = currentFilters;
             // Pass the filters as query parameters to the API call
-            const response = await axios.get("http://localhost:8081/api/data", {
+            const response = await axios.get(`${process.env.REACT_APP_URL}api/data`, {
                 params: {
                     age,
                     gender,
