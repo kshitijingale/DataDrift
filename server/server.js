@@ -1,9 +1,11 @@
 require('dotenv').config();
+const path = require('path')
 const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcrypt');
 const fs = require('fs');
 const csv = require('csv-parser');
+const dataFolderPath = path.join(__dirname, 'data', 'data.csv');
 const { userExists, findUser, saveUser } = require('./helper/user');
 const app = express();
 const port = 8081;
@@ -22,11 +24,10 @@ app.get('/api/data', async (req, res) => {
 
         const filters = req.query;
         const results = [];
-        fs.createReadStream('./data/data.csv')
+        fs.createReadStream(dataFolderPath)
             .pipe(csv())
             .on('data', (data) => results.push(data))
             .on('end', () => {
-                console.log(filters);
                 const filteredData = filterData(results, filters)
                 res.json(filteredData);
             });
