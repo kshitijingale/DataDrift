@@ -1,5 +1,7 @@
-const userFilePath = 'data/users.txt';
+const path = require('path')
 const fs = require('fs');
+const dataFolderPath = path.join(__dirname, '..', 'data');
+const userFilePath = path.join(dataFolderPath, 'users.txt');
 
 exports.userExists = (email) => {
     const users = getUsers();
