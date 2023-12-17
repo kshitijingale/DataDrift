@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Goku",
+    "email": "test@email.com",
+    "password": "$2b$10$dd24MtgdTYG8NMH0grmNSu3FqQEhxblUPCtZGeNJEzK9AVXGicpfq"
+  },
+  {
+    "name": "Kshitij Ingale",
+    "email": "kshitijingale2@gmail.com",
+    "password": "$2b$10$5XPzJUY1f7duubC/.bhZieI8IXqav/o3OZEJHIQgeqElS8DPHUh3O"
+  }
+]
