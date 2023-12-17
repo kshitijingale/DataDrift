@@ -117,6 +117,10 @@ const Login = () => {
                         >
                             {loading ? "Signing in..." : "Sign in"}
                         </button>
+                        <p className="text-gray-500 text-xs mt-2 flex flex-col">
+                            <span>Demo email: demo@email.com</span>
+                            <span>Demo password: Demo@123</span>
+                        </p>
                         <p className="mt-2 text-sm font-light text-gray-500 dark:text-gray-400">
                             Don’t have an account yet?{" "}
                             <Link
@@ -126,6 +130,7 @@ const Login = () => {
                                 Sign up
                             </Link>
                         </p>
+
                     </form>
                 </div>
             </div>
