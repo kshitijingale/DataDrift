@@ -29,6 +29,6 @@ Building DataDrift enhanced my skills in several areas:
 - Other: Chart.js, JavaScript
 
 ## Deployment 🚀:
-[DataDrift Live](https://task-manager-kshitij.vercel.app/)
+[DataDrift Live](https://data-drift-frontend.vercel.app/)
 
 Explore DataDrift for a detailed insight into sales and user engagement analytics!
